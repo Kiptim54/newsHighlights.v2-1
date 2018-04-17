@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+
+{% block content %}
+articles working
+
+<main role="main" class="container">
+       <div class="jumbotron">
+         <h1 style="text-align: centre">Top Headlines</h1>
+         <a class="btn btn-lg btn-outline-primary" href="/" role="button">Go Back Home &raquo;</a>
+       </div>
+     </main>
+<div class="container">
+   <div class="row">
+               <div class="col-md-12">
+           {{macro.displayArticleList(articles)}}
+           </div>
+       </div>
+       </div>
+{%endblock%}
